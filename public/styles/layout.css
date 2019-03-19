@@ -30,4 +30,6 @@ body {
    background-color: white;
    margin: auto; /* center aligned */
    padding-top: 80px;
+   height: 100%;
  }
+ 
