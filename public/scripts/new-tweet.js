@@ -8,6 +8,7 @@ $(".new-tweet form").submit(function(e){
   } else {
     const serialized = $(this).serialize();
     $(".new-tweet textarea").val("");//clear the text field
+    $("span.counter").text("0");
     $.post("/tweets", serialized, function(){
       // $("#tweets").empty();
       // loadTweets();
@@ -20,4 +21,9 @@ $(".new-tweet form").submit(function(e){
       
     })
   }
+})
+
+$("#compose").on("click", function(){
+  $(".new-tweet").slideToggle();
+  $(".new-tweet textarea").focus();
 })
