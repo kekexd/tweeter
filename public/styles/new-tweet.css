@@ -1,5 +1,5 @@
 section.new-tweet {
-    margin: 3em 2em 3em 2em;
+    margin: 3em 2em 1em 2em;
     padding-left: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 0.5em;
@@ -10,7 +10,7 @@ section.new-tweet {
     border-radius: 5px;
 }
 
-section h2 {
+section.new-tweet h2 {
     border-bottom-style: solid;
     border-bottom-width: 1px;
 }

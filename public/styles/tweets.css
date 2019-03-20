@@ -1,0 +1,56 @@
+#tweets {
+    margin: 1em 2em 1em 2em;
+    z-index: 0;
+}
+
+article {
+    opacity: 0.7;
+    margin-bottom: 15px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+}
+
+article.active {
+    opacity: 1;
+}
+/* pure css approach, doesn't need hover-tweet.js */
+/* article:hover {
+    opacity: 1;
+} */ 
+
+article .tweet-header {
+    background-color: #eee;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+article .tweet-footer {
+    border: solid 1px #eee;
+    font-size: small;
+    padding: 0.5em;
+}
+
+article .tweet-content {
+    padding: 30px 6px;
+}
+
+.tweet img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.tweet .user {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 6px;
+    flex-grow: 1;
+}
+
+.tweet .somebody {
+    font-size: 15px;
+    color: gray;
+    padding-top: 8px;
+}
