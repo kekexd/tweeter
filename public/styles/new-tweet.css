@@ -20,6 +20,12 @@ textarea {
     padding: 0.5em;
 }
 
-section span {
-    float: right;
+.new-tweet .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#error{
+    color: red;
+    font-weight: bold;
 }
