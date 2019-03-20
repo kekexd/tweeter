@@ -22,7 +22,8 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js" defer></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    <script type="text/javascript" src="/scripts/hover-tweet.js"></script>
+    <!-- <script type="text/javascript" src="/scripts/hover-tweet.js"></script> -->
+    <script type="text/javascript" src="/scripts/new-tweet.js" defer></script>
   </head>
 
   <body>
@@ -35,6 +36,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
+        <!-- New tweet section -->
         <section class="new-tweet">
           <h2>Compose Tweet</h2>
           <form method="POST" action="/tweets">
@@ -43,19 +45,9 @@
             <span class="counter"></span>
           </form>
         </section>
+        <!-- view tweets section -->
         <section id="tweets">
-          <article class="tweet">
-            <header class="tweet-header">
-              <img src="/images/smiley.png">
-              <div class="user">User</div>
-              <div class="somebody">@somebody</div>
-            </header>
-            <div class="tweet-content">blah</div>
-            <footer class="tweet-footer">
-              <div class="date">10 days ago</div>
-              <img class="icon" src="/images/icon.png">
-            </footer>
-          </article>
+          
         </section>
     </main>
 

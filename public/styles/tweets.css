@@ -10,13 +10,9 @@ article {
     border-radius: 5px;
 }
 
-article.active {
+article:hover {
     opacity: 1;
-}
-/* pure css approach, doesn't need hover-tweet.js */
-/* article:hover {
-    opacity: 1;
-} */ 
+} 
 
 article .tweet-header {
     background-color: #eee;
@@ -63,7 +59,7 @@ article .tweet-content {
     opacity: 0;   
 }
 
-.tweet-footer .icon.active {
+.tweet-footer .icon:hover {
     width: 67px;
     height: 17px;
     opacity: 1;   
