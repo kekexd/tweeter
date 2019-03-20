@@ -4,7 +4,7 @@
 }
 
 article {
-    opacity: 0.7;
+    opacity: 0.8;
     margin-bottom: 15px;
     border: solid 1px lightgray;
     border-radius: 5px;
@@ -30,6 +30,8 @@ article .tweet-footer {
     border: solid 1px #eee;
     font-size: small;
     padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
 }
 
 article .tweet-content {
@@ -53,4 +55,16 @@ article .tweet-content {
     font-size: 15px;
     color: gray;
     padding-top: 8px;
+}
+
+.tweet-footer .icon {
+    width: 67px;
+    height: 17px;
+    opacity: 0;   
+}
+
+.tweet-footer .icon.active {
+    width: 67px;
+    height: 17px;
+    opacity: 1;   
 }

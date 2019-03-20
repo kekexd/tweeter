@@ -75,7 +75,11 @@ function createTweetElement (data) {
   $header.append($img).append($div1).append($div2);
 
   let $content = $("<div>").addClass("tweet-content").text(data.content.text);
-  let $footer = $("<footer>").addClass("tweet-footer").text(new Date(data.created_at));
+  let $footer = $("<footer>").addClass("tweet-footer");
+  let $date = $("<div>").addClass("date").text(new Date(data.created_at));
+  let $icon = $("<img>").addClass("icon").attr("src", "/images/icon.png");
+  $footer.append($date).append($icon);
+  
 
   $tweet.append($header).append($content).append($footer);
   
