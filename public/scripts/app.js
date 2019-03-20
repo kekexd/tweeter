@@ -9,9 +9,9 @@ function renderTweets(tweets) {
   // loops through tweets
     // calls createTweetElement for each tweet
     // takes return value and appends it to the tweets container
-  for(let i of tweets){
+  for(let i = tweets.length - 1; i > -1; i--){
     //console.log(i)
-    let $tweet = createTweetElement(i);
+    let $tweet = createTweetElement(tweets[i]);
     $('#tweets').append($tweet); 
   }
 }
@@ -39,13 +39,16 @@ function createTweetElement (data) {
 
 //fetching tweets from the tweets page
 function loadTweets(){
-  // const $button = $(".new-tweet :submit");
-  // $button.on('click', function () {
-    $.ajax('tweets', { method: 'GET' })
+  $.ajax('tweets', { method: 'GET' })
     .then(function(res){
-      renderTweets(res)
-    })
-//   })
+    renderTweets(res)
+  })
 }
 
 loadTweets();
+
+
+// const $button = $(".new-tweet :submit");
+// $button.on('click', function () {
+
+// })
