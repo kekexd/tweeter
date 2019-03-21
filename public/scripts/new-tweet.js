@@ -27,6 +27,7 @@ $(".new-tweet form").submit(function(e){
   }
 })
 
+$(".new-tweet").hide();
 $("#compose").on("click", function(){
   $(".new-tweet").slideToggle(); //toggle the form
   $(".new-tweet textarea").focus(); //focus on the textarea
