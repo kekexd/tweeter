@@ -23,7 +23,6 @@ $(".new-tweet form").submit(function(e){
           const newTweet = createTweetElement(newest);
           $('#tweets').prepend(newTweet); // prepend append the new tweet on top
         })
-      
     })
   }
 })
