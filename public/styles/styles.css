@@ -1,0 +1,186 @@
+/*
+ * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * https://css-tricks.com/international-box-sizing-awareness-day/
+ * Do not modify these two selectors, please
+ */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*
+ * Global layout stuff
+ */
+body {
+  margin: 0;
+  color: #244751;
+  background-color: #eee;
+  font-family: "Roboto Condensed", sans-serif;
+  /* if font 'Roboto Condensed' is not available, let it degrade to sans-serif */
+}
+
+/*
+ * Additional CSS can be defined below or in other CSS files, as per instructions
+ */
+body main {
+  width: 450px;
+  background-color: white;
+  margin: auto;
+  /* center aligned */
+  padding-top: 100px;
+  height: 100%;
+}
+
+#nav-bar {
+  position: fixed;
+  top: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #00a087;
+  color: #e8fdff;
+  padding-left: 2em;
+  padding-right: 2em;
+  z-index: 1;
+}
+
+#nav-bar .logo {
+  width: 80px;
+  height: 80px;
+  margin-right: 5px;
+  float: left;
+}
+
+#nav-bar .header {
+  margin-left: 5px;
+  float: left;
+  font-size: 200%;
+  line-height: 80px;
+}
+
+#compose {
+  background-color: #f1f3eb;
+  border: solid 1px gray;
+  border-radius: 5px;
+  float: right;
+  margin: 10px 2px;
+  height: 70%;
+  width: 150px;
+  font-size: 24px;
+  color: #244751;
+}
+
+#tweets {
+  margin: 1em 2em 1em 2em;
+  z-index: 0;
+}
+
+article {
+  opacity: 0.8;
+  margin-bottom: 15px;
+  border: solid 1px lightgray;
+  border-radius: 5px;
+}
+
+article:hover {
+  opacity: 1;
+}
+
+article:hover .icons {
+  opacity: 1;
+  justify-content: space-between;
+  float: right;
+}
+
+article .tweet-header {
+  background-color: #eee;
+  font-size: large;
+  display: flex;
+  justify-content: space-between;
+  padding: 6px;
+}
+
+article .tweet-footer {
+  border: solid 1px #eee;
+  font-size: small;
+  padding: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+article .tweet-content {
+  padding: 30px 6px;
+}
+
+.tweet img {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.tweet .user {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 6px;
+  flex-grow: 1;
+}
+
+.tweet .somebody {
+  font-size: 15px;
+  color: gray;
+  padding-top: 8px;
+}
+
+.tweet-footer .icons {
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .tweet-footer .icons:hover {
+    opacity: 1; 
+    justify-content: space-between;
+    float: right;  
+} */
+.icons .icon {
+  width: 18px;
+  height: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+section.new-tweet {
+  margin: 1em 2em 1em 2em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  background-color: #eee;
+  border-style: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  border-radius: 5px;
+}
+
+section.new-tweet h2 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.5em;
+}
+
+.new-tweet .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+#error {
+  color: red;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */
