@@ -29,7 +29,8 @@ module.exports = function(DataHelpers) {
       content: {
         text: req.body.text
       },
-      created_at: Date.now()
+      created_at: Date.now(),
+      like: false
     };
 
     DataHelpers.saveTweet(tweet, (err, newTweet) => {
@@ -40,6 +41,11 @@ module.exports = function(DataHelpers) {
       }
     });
   });
+
+  tweetsRoutes.get("/tweets/:tweetId", function(req, res) {
+    res.redirect('google.com')
+  })
+
 
   return tweetsRoutes;
 
