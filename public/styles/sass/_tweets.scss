@@ -83,4 +83,13 @@ article .tweet-content {
     height: 14px;
     margin-left: 5px;
     margin-right: 5px;
+    filter: grayscale(100%);
+}
+
+.icons .like.active {
+    width: 18px;
+    height: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    filter: grayscale(0%);
 }

@@ -18,7 +18,7 @@ function renderTweets(tweets) {
 
 //create html elements
 function createTweetElement (data) {
-  let $tweet = $("<article>").addClass("tweet");
+  let $tweet = $("<article>").addClass("tweet").attr("data-id", data._id);
   let $header = $("<header>").addClass("tweet-header");
 
   let $img = $("<img>").attr("src", data.user.avatars.regular);
