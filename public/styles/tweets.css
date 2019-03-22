@@ -53,14 +53,22 @@ article .tweet-content {
     padding-top: 8px;
 }
 
-.tweet-footer .icon {
-    width: 67px;
-    height: 17px;
+.tweet-footer .icons {
     opacity: 0;   
+    display: flex;
+    justify-content: space-between;
+    float: right;
 }
 
-.tweet-footer .icon:hover {
+.tweet-footer .icons:hover {
     width: 67px;
     height: 17px;
-    opacity: 1;   
+    opacity: 1; 
+    justify-content: space-between;
+    float: right;  
+}
+
+.icons .icon {
+    width: 18px;
+    height: 14px;
 }
