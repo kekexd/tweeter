@@ -12,6 +12,13 @@ article {
 
 article:hover {
     opacity: 1;
+}
+
+
+article:hover .icons {
+    opacity: 1;
+    justify-content: space-between;
+    float: right; 
 } 
 
 article .tweet-header {
@@ -57,18 +64,17 @@ article .tweet-content {
     opacity: 0;   
     display: flex;
     justify-content: space-between;
-    float: right;
 }
 
-.tweet-footer .icons:hover {
-    width: 67px;
-    height: 17px;
+/* .tweet-footer .icons:hover {
     opacity: 1; 
     justify-content: space-between;
     float: right;  
-}
+} */
 
 .icons .icon {
     width: 18px;
     height: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
