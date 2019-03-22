@@ -34,8 +34,9 @@ function createTweetElement (data) {
   let $icons = $("<div>").addClass("icons");
   let $flag = $("<img>").addClass("icon").attr("src", "/images/flag.png");
   let $retweet = $("<img>").addClass("icon").attr("src", "/images/retweet.png");
-  let $like = $("<img>").addClass("icon").attr("src", "/images/like.png");
-  $icons.append($flag).append($retweet).append($like);
+  let $like = $("<img>").addClass("like").attr("src", "/images/like.png");
+  let $nLikes = $("<div>").addClass("nLikes").text("");
+  $icons.append($flag).append($retweet).append($like).append($nLikes);
   $footer.append($date).append($icons);
   
   $tweet.append($header).append($content).append($footer);

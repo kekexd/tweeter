@@ -151,6 +151,13 @@ article .tweet-content {
   margin-right: 5px;
 }
 
+.icons .like {
+  width: 18px;
+  height: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 section.new-tweet {
   margin: 1em 2em 1em 2em;
   padding-left: 0.5em;
