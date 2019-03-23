@@ -12,6 +12,7 @@ module.exports = function makeDataHelpers(db) {
       callback(null, newTweet);
     },
 
+    //Update the number of likes in `db`
     likeTweet: function(tweetId, callback) {
       db.collection("tweets").updateOne({'_id': ObjectId(tweetId)}, { $inc: { "like": 1}});
       callback(null, true);

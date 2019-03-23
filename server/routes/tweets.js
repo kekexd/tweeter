@@ -42,14 +42,13 @@ module.exports = function(DataHelpers) {
     });
   });
 
+  //route to update the number of likes
   tweetsRoutes.put("/:tweetId/like", function(req, res) {
-    //const newLike = req.body;
-    //console.log(req.params.tweetId)
     DataHelpers.likeTweet(req.params.tweetId, (err, res) => {
       if (err) {
         res.status(500).json({ error: err.message });
       } else {
-        // res.json(null);
+        console.log('updated');
       }
     });
     
