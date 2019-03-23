@@ -3,7 +3,8 @@
 A simple single-page AJAX-based Twitter clone built with Node, Express and MongoDB. Tweeter allows user to send and view tweets on the fly.
 
 ## Final Project
-!["Screenshot of URLs page"]
+!["Screenshot of URLs page"](https://github.com/kekexd/tweeter/blob/feature/likes/docs/compose.png?raw=true)
+!["Screenshot of URLs page"](https://github.com/kekexd/tweeter/blob/feature/likes/docs/tweets.png?raw=true)
 
 ## Getting Started
 
